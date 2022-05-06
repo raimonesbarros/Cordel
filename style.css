@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+
+:root
+{
+   --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+   --fonteprincipal: 'Arima Madurai', cursive;
+   --fontetitulo: 'Cantata One', serif;
+}
+*
+{
+   margin: 0;
+   padding: 0;
+   font-size: 1em;
+   text-decoration: none;
+}
+
+html, body
+{
+   min-height: 100vh;
+   font-family: var(--fontepadrao);
+   background-color: white;
+   background-color: darkgrey;
+}
+
+header
+{
+   background-color: black;
+   color: white;
+   text-align: center;
+   box-shadow: 1px 0 3px #363636;
+}
+
+header > h1
+{
+   display: inline-block;
+   margin: auto;
+   padding-top: 50px;
+   font-size: 10vw;
+   font-variant: small-caps;
+   font-family: var(--fontetitulo);
+}
+
+header > p
+{
+   padding-bottom: 50px;
+}
+
+header a, footer a
+{
+   color: white;
+   font-weight: bolder;
+}
+
+a:hover
+{
+   text-decoration: underline;
+}
+
+section
+{
+   display: block;
+   padding: 10vh 0;
+   font-size: 3.5vw;
+   line-height: 2em;
+   font-family: var(--fonteprincipal);
+}
+
+section p
+{
+   padding-bottom: 2em;
+   font-size: 3.5vw;
+}
+
+section.normal
+{
+   color: black;
+   background-color: white;
+   text-align: center;
+}
+
+section.imagem
+{
+   color: white;
+   background-color: darkgray;
+   text-align: center;
+   background-size: cover;
+   background-position: right center;
+   box-shadow: inset 3px 3px 6px #00000060;
+   background-attachment: fixed;
+}
+
+section.imagem p
+{
+   display: inline-block;
+   padding: 5px;
+   background-color: #00000053;
+   text-shadow: 1px 1px 2px #00000060;
+   border-radius: 3px;
+}
+
+section#img01
+{
+   background-image: url('imagens/background001.jpg');
+}
+
+section#img02
+{
+   background-image: url('imagens/background002.jpg');
+}
+
+
+footer
+{
+   background-color: black;
+   padding: 25px 0;
+   color: white;
+   text-align: center;
+}
